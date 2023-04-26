@@ -16,13 +16,7 @@ def sign(cookie):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     }
     r = requests.get(url1, headers=headers, allow_redirects=False)
-    s_cookie = r.headers['Set-Cookie']
-    cookie = cookie + s_cookie
-    headers['Cookie'] = cookie
     r = requests.get(url2, headers=headers, allow_redirects=False)
-    s_cookie = r.headers['Set-Cookie']
-    cookie = cookie + s_cookie
-    headers['Cookie'] = cookie
     r = requests.get(url3, headers=headers)
     r_data = BeautifulSoup(r.text, "html.parser")
     jx_data = r_data.find("div", id="messagetext").find("p").text
