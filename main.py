@@ -16,9 +16,13 @@ def sign(cookie):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     }
     r = requests.get(url1, headers=headers, allow_redirects=False)
+    time.sleep(1)
     r = requests.get(url2, headers=headers, allow_redirects=False)
+    time.sleep(1)
     r = requests.get(url3, headers=headers)
+    time.sleep(1)
     r_data = BeautifulSoup(r.text, "html.parser")
+    time.sleep(1)
     jx_data = r_data.find("div", id="messagetext").find("p").text
     if "您需要先登录才能继续本操作" in jx_data:
         result += "Cookie 失效"
