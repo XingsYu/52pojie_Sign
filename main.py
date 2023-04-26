@@ -45,4 +45,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-52pojie_Sign/main.py at master · XingsYu/52pojie_Sign
