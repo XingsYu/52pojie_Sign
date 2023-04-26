@@ -1,36 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@XingsYu 
-XingsYu
-/
-52pojie_Sign
-Public
-forked from RoadIsLong/52pojie_Sign
-Cannot fork because you own this repository and are not a member of any organizations.
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Beta Try the new code view
-52pojie_Sign/main.py /
-@RoadIsLong
-RoadIsLong Update main.py
-Latest commit e264230 on Aug 9, 2022
- History
- 1 contributor
-40 lines (35 sloc)  1.1 KB
- 
-
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import os
